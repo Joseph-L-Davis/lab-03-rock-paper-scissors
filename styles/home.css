@@ -1,1 +1,83 @@
 /* add home page styles here */
+.battle-box {
+  background-color: rgb(247, 196, 191);
+  margin: 20px;
+  width: 1200px;
+  height: 600px;
+  display: grid;
+  grid-template-columns: 15% 35% 35% 15%;
+  grid-template-rows: 20% 60% 20%;
+  padding: 5px;
+}
+
+.radios {
+  grid-column: 2;
+  grid-row: 2;
+  display: flex;
+  flex-direction: row;
+  align-items: flex-end;
+  justify-content: flex-end;
+  padding: 30px;
+  /* margin: 10px; */
+}
+
+input:checked+img {
+  display: block;
+}
+
+input img {
+  display: none;
+}
+
+.buttons {
+  grid-column: 2;
+  grid-row: 3;
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  justify-content: flex-start;
+
+}
+
+.throw {
+  width: 100px;
+  height: 30px;
+  margin: 10px;
+  cursor: pointer;
+}
+
+.reset {
+  width: 100px;
+  height: 30px;
+  cursor: pointer;
+}
+
+.user-score {
+  grid-column: 1;
+  grid-row: 1;
+}
+
+.comp-score {
+  grid-column: 4;
+  grid-row: 1;
+}
+
+.player-1 {
+  grid-row: 1;
+  grid-column: 2;
+  display: flex;
+  justify-content: center;
+  font-size: 2.5rem;
+  font-weight: bolder;
+
+}
+
+.computer {
+  grid-row: 1;
+  grid-column: 3;
+  display: flex;
+  justify-content: center;
+  font-size: 2.5rem;
+  font-weight: bolder;
+
+}

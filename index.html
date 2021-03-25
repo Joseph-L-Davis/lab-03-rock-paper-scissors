@@ -15,31 +15,59 @@
 <body>
     <header>
         <div class="gutter-right logo">
-            <img src="assets/big-logo.png"/>
+            <img src="assets/RPS.png"/>
         </div>
     </header>
     <main>
         <section class="main-section">
-            <img class="main-logo" src="assets/alchemy-logo.png"/>
+            <img class="main-logo" src="assets/RPS.png"/ width="180px" height="150px">
             <h2>
-                Welcome to Alchemy Bootstrap!
+                Welcome to The Rock, Paper Scissors Showdown!
             </h2>
 
-            <p>
-                Lorem ipsum dolor sit, amet consectetur adipisicing elit. Aperiam repellendus similique consectetur voluptas facilis molestiae voluptates nobis error sapiente, ad, ipsa vero non, sint eligendi? Eos praesentium iusto magnam exercitationem.
-                Earum sunt voluptatibus molestias, sint voluptatum quos reiciendis. Id asperiores deleniti dolores provident, eius, nostrum aperiam vel, optio qui illo corrupti in. Eum quam, est nemo porro sapiente excepturi assumenda.
-                Rerum unde quidem maxime. Ullam, dolores labore molestias voluptatibus adipisci quod? Quaerat nihil inventore molestiae assumenda, voluptates vel necessitatibus eligendi? Accusamus ratione eligendi reprehenderit? Beatae incidunt molestias ea soluta nulla.
-                Fugiat quae soluta voluptate mollitia praesentium modi ex illo, autem assumenda, vel aliquam fugit possimus dolorem esse corporis ipsa! Voluptatem sapiente error non, ea optio suscipit quasi maxime nobis ex?
-                Et ipsa tenetur ullam ab nesciunt quas fugit velit impedit illum esse eligendi corporis culpa praesentium aspernatur ex sint veniam quidem, doloribus corrupti hic vitae. Eum neque ducimus omnis exercitationem?
-            </p>
-            <hr />
-            <p>
-                Lorem ipsum dolor sit, amet consectetur adipisicing elit. Aperiam repellendus similique consectetur voluptas facilis molestiae voluptates nobis error sapiente, ad, ipsa vero non, sint eligendi? Eos praesentium iusto magnam exercitationem.
-                Earum sunt voluptatibus molestias, sint voluptatum quos reiciendis. Id asperiores deleniti dolores provident, eius, nostrum aperiam vel, optio qui illo corrupti in. Eum quam, est nemo porro sapiente excepturi assumenda.
-                Rerum unde quidem maxime. Ullam, dolores labore molestias voluptatibus adipisci quod? Quaerat nihil inventore molestiae assumenda, voluptates vel necessitatibus eligendi? Accusamus ratione eligendi reprehenderit? Beatae incidunt molestias ea soluta nulla.
-                Fugiat quae soluta voluptate mollitia praesentium modi ex illo, autem assumenda, vel aliquam fugit possimus dolorem esse corporis ipsa! Voluptatem sapiente error non, ea optio suscipit quasi maxime nobis ex?
-                Et ipsa tenetur ullam ab nesciunt quas fugit velit impedit illum esse eligendi corporis culpa praesentium aspernatur ex sint veniam quidem, doloribus corrupti hic vitae. Eum neque ducimus omnis exercitationem?
-            </p>
+            <div class="battle-box" id="battle-box">
+
+                <div class="user-score" id="user-score"></div>
+
+                <div class="comp-score" id="comp-score"></div>
+
+                <section class="radios" id="radios">
+                    <label>
+                        Rock
+                        <img src="./assets/mick.jpeg" alt="mick" width="140px" height="160px">
+                        <input src="./assets/mick.jpeg" type="radio" name="choice" value="rock">
+                    </label>
+
+                    <label>
+                        Paper
+                        <img src="./assets/paper.jpeg" alt="mick" width="140px" height="160px">
+                        <input type="radio" name="choice" value="paper">
+                    </label>
+
+                    <label>
+                        Scissors
+                        <img src="./assets/scissors.jpeg" alt="mick" width="140px" height="160px">
+                        <input type="radio" name="choice" value="scissors">
+                    </label>
+                </section>
+
+                <section class="buttons" id="buttons">
+
+                    <button id="throw" class="throw">Throw!</button>
+
+                    <button id="reset" class="reset">Reset!</button>
+                </section>
+
+                <div class="user-score" id="user-score">Score: <span></span></div>
+
+                <div class="player-1">Player 1</div>
+
+                <div class="computer">Computer</div>
+
+                <div class="comp-score" id="comp-score">Score: <span></span></div>
+            </div>
+
+            
 
         </section>
     </main>
