@@ -1,10 +1,10 @@
 export function getRandomThrow(someNum) {
     if (someNum < .33) {
-        return 'ROCK';
+        return 'rock';
     } else if (someNum > .66) {
-        return 'SCISSORS';
+        return 'scissors';
     } else {
-        return 'PAPER';
+        return 'paper';
     }
 }            
 

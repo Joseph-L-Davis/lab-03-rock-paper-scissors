@@ -4,10 +4,10 @@ import { getRandomThrow } from '../utils.js';
 
 const test = QUnit.test;
 
-test('should return "ROCK" if someNum is less than .33', (expect) => {
+test('should return "rock" if someNum is less than .33', (expect) => {
     //Arrange
     // Set up your arguments and expectations
-    const expected = 'ROCK';
+    const expected = 'rock';
     
     //Act 
     // Call the function you're testing and set the result to a const
@@ -18,10 +18,10 @@ test('should return "ROCK" if someNum is less than .33', (expect) => {
     expect.equal(actual, expected);
 });
 
-test('should return "PAPER" if someNum is less than .33 and more than .66', (expect) => {
+test('should return "paper" if someNum is less than .33 and more than .66', (expect) => {
     //Arrange
     // Set up your arguments and expectations
-    const expected = 'PAPER';
+    const expected = 'paper';
     
     //Act 
     // Call the function you're testing and set the result to a const
@@ -32,10 +32,10 @@ test('should return "PAPER" if someNum is less than .33 and more than .66', (exp
     expect.equal(actual, expected);
 });
 
-test('should return "SCISSORS" if someNum is more than .66', (expect) => {
+test('should return "scissors" if someNum is more than .66', (expect) => {
     //Arrange
     // Set up your arguments and expectations
-    const expected = 'SCISSORS';
+    const expected = 'scissors';
     
     //Act 
     // Call the function you're testing and set the result to a const
