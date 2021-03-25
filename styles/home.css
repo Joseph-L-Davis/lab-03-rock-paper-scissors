@@ -81,3 +81,32 @@ input img {
   font-weight: bolder;
 
 }
+
+.plays {
+  grid-column-start: 2;
+  grid-column-end: 3;
+  grid-row: 1;
+  display: flex;
+  justify-content: flex-end;
+  position: relative;
+  left: 40px;
+
+}
+
+.win-lose-draw {
+  grid-column-start: 2;
+  grid-column-end: 3;
+  grid-row: 2;
+  display: flex;
+  justify-content: flex-end;
+  font-size: 2.5rem;
+}
+
+.computer-throw {
+  grid-row: 2;
+  grid-column: 3;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+
+}
