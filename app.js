@@ -27,16 +27,24 @@ throwButton.addEventListener('click', () => {
     const randomNum = Math.random();
     const compThrow = getRandomThrow(randomNum);
     
-    if (doesUserWin(userThrow, compThrow) === 'win') {
-        winner.textContent = 'YOU WON';
-        myPoints++;
-    } else if (doesUserWin(userThrow, compThrow) === 'lose') {
-        winner.textContent = 'YOU LOSE';
-        losses++;
-    } else {
-        winner.textContent = 'ITS A DRAW';
-    }
+    switch (doesUserWin(userThrow, compThrow)) {
+        case 'win':
+            winner.textContent = 'YOU WON';
+            myPoints++;
+            totalPlayed++;
+            break;
 
+        case 'lose':
+            winner.textContent = 'YOU LOSE';
+            losses++;
+            totalPlayed++;
+            break;
+
+        case 'draw':
+            winner.textContent = 'ITS A DRAW';
+            totalPlayed++;
+            break;
+    }
     userPoints.textContent = myPoints;
     gamesPlayed.textContent = totalPlayed;
     lossesEl.textContent = losses;

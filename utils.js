@@ -24,8 +24,3 @@ export function doesUserWin(user, comp) {
     if (user === 'scissors' && comp === 'rock') return 'lose';
 
 }
-
-// export function doesUserWin(user, comp) {
-    
-
-// }   
