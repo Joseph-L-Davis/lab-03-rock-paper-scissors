@@ -31,18 +31,15 @@ throwButton.addEventListener('click', () => {
         case 'win':
             winner.textContent = 'YOU WON';
             myPoints++;
-            totalPlayed++;
             break;
 
         case 'lose':
             winner.textContent = 'YOU LOSE';
             losses++;
-            totalPlayed++;
             break;
 
         case 'draw':
             winner.textContent = 'ITS A DRAW';
-            totalPlayed++;
             break;
     }
     userPoints.textContent = myPoints;
