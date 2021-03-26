@@ -1,3 +1,4 @@
+// Created dev branch !
 // import functions and grab DOM elements
 // Buttons
 const throwButton = document.querySelector('.throw');
@@ -56,3 +57,5 @@ resetButton.addEventListener('click', () => {
     lossesEl.textContent = 0;
     winner.textContent = 'CHOOSE WISELY';
 });
+
+
