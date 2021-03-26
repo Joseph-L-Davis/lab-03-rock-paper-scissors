@@ -10,6 +10,7 @@ const winner = document.querySelector('.win-lose-draw');
 const userPoints = document.querySelector('#user-points');
 const lossesEl = document.querySelector('#loss-points');
 const gamesPlayed = document.querySelector('#gamesPlayed');
+const resets = document.querySelector('.resets');
 
 import { getRandomThrow, doesUserWin } from './utils.js';
 
@@ -17,6 +18,7 @@ import { getRandomThrow, doesUserWin } from './utils.js';
 let myPoints = 0;
 let losses = 0;
 let totalPlayed = 0;
+let numOfResets = 0;
 
 // set event listeners to update state and DOM
 throwButton.addEventListener('click', () => {       
@@ -49,6 +51,7 @@ throwButton.addEventListener('click', () => {
 });
 
 resetButton.addEventListener('click', () => {
+    numOfResets++;
     myPoints = 0;
     totalPlayed = 0;
     losses = 0;
@@ -56,6 +59,8 @@ resetButton.addEventListener('click', () => {
     gamesPlayed.textContent = 0;
     lossesEl.textContent = 0;
     winner.textContent = 'CHOOSE WISELY';
+    resets.textContent = numOfResets;
+
 });
 
 
