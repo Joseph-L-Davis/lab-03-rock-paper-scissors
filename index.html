@@ -9,18 +9,23 @@
     <link rel="stylesheet" href="styles/reset.css">
     <link rel="stylesheet" href="styles/style.css">
     <link rel="stylesheet" href="styles/home.css">
-    <title>Document</title>
+    <title>ROCK PAPER SCISSORS</title>
 </head>
 
 <body>
+
     <header>
         <div class="gutter-right logo">
             <img src="assets/RPS.png"/>
         </div>
     </header>
+
     <main>
+
         <section class="main-section">
+
             <img class="main-logo" src="assets/RPS.png"/ width="180px" height="150px">
+
             <h2>
                 Welcome to The Rock, Paper Scissors Showdown!
             </h2>
@@ -28,23 +33,26 @@
             <div class="battle-box" id="battle-box">
 
                 <section class="radios" id="radios">
+                    
                     <label>
-                        Rock
                         <img src="./assets/mick.jpeg" alt="mick" width="140px" height="160px">
+                        
                         <input src="./assets/mick.jpeg" type="radio" name="choice" value="rock">
                     </label>
 
                     <label>
-                        Paper
+                        
                         <img src="./assets/paper.jpeg" alt="mick" width="140px" height="160px">
+
                         <input type="radio" name="choice" value="paper">
                     </label>
 
                     <label>
-                        Scissors
                         <img src="./assets/scissors.jpeg" alt="mick" width="140px" height="160px">
+                        
                         <input type="radio" name="choice" value="scissors">
                     </label>
+
                 </section>
 
                 <div class="plays" id="plays">Games Played: <span id="gamesPlayed">0</span></div>
@@ -56,15 +64,19 @@
                     <button id="throw" class="throw">Throw!</button>
 
                     <button id="reset" class="reset">Reset!</button>
+
                 </section>
 
                 <div class="user-score" id="user-score">Score: <span id="user-points">0</span></div>
 
                 <div class="losses" id="losses">Losses: <span id="loss-points">0</span></div>
+
             </div>
 
         </section>
+
     </main>
+
     <footer>
         <div class="copy gutter-right">&copy; 2020 Alchemy Code Lab</div>
     </footer>
