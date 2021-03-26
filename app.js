@@ -6,7 +6,7 @@ const resetButton = document.querySelector('.reset');
 
 // Other Elements
 
-const winner = document.querySelector('.win-lose-draw');
+const winner = document.querySelector('.winner');
 const userPoints = document.querySelector('#user-points');
 const lossesEl = document.querySelector('#loss-points');
 const gamesPlayed = document.querySelector('#gamesPlayed');
@@ -48,6 +48,7 @@ throwButton.addEventListener('click', () => {
     userPoints.textContent = myPoints;
     gamesPlayed.textContent = totalPlayed;
     lossesEl.textContent = losses;
+
 });
 
 resetButton.addEventListener('click', () => {
