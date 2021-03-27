@@ -11,7 +11,10 @@ const userPoints = document.querySelector('#user-points');
 const lossesEl = document.querySelector('#loss-points');
 const gamesPlayed = document.querySelector('#gamesPlayed');
 const resets = document.querySelector('.resets');
-
+const rock = '../assets/mick.jpeg';
+const paper = '../assets/paper.jpeg';
+const scissors = '../assets/scissors.jpeg';
+const compToss = document.querySelector('#comp-toss');
 import { getRandomThrow, doesUserWin } from './utils.js';
 
 // initialize state
@@ -28,7 +31,20 @@ throwButton.addEventListener('click', () => {
 
   //  Computers throw
     const randomNum = Math.random();
-    const compThrow = getRandomThrow(randomNum);
+    let compThrow = getRandomThrow(randomNum);
+    switch (compThrow) {
+        case 'rock':
+            compToss.src = rock;
+            break;
+        case 'paper':
+            compToss.src = paper;
+            break;
+        case 'scissors':
+            compToss.src = scissors;
+            break;
+
+    }
+
     
     switch (doesUserWin(userThrow, compThrow)) {
         case 'win':
